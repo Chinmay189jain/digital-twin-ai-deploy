@@ -14,6 +14,8 @@ services:
 
   frontend:
     image: chinmay189jain/digital-twin-ai-frontend:latest
+    environment:
+      BACKEND_UPSTREAM: ${BACKEND_UPSTREAM:-backend:8080}
     ports:
       - "80:80"
     depends_on:
