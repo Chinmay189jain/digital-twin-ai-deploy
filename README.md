@@ -134,11 +134,27 @@ cp .env.example .env
 
 ## 7. Quick Start (Docker Compose)
 
+## 7. Quick Start (Docker Compose)
+
 From the repository root:
 
 ```bash
 docker compose --env-file .env up -d
 docker compose ps
+```
+
+### Docker Images Used
+
+This deployment repository runs the following published Docker images:
+
+- [Frontend Image on Docker Hub](https://hub.docker.com/repository/docker/chinmay189jain/digital-twin-ai-frontend)
+- [Backend Image on Docker Hub](https://hub.docker.com/repository/docker/chinmay189jain/digital-twin-ai-backend)
+
+You can also pull them manually if needed:
+
+```bash
+docker pull chinmay189jain/digital-twin-ai-frontend:latest
+docker pull chinmay189jain/digital-twin-ai-backend:latest
 ```
 
 ### View Logs
